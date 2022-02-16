@@ -1,96 +1,109 @@
-
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>云出玉</title>
-    <link rel="icon" href="./images/ycyslogo.png" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript">
-    var system = {
-        win: false,
-        mac: false,
-        x11: false
-    };
-    //检测平台
-    var p = navigator.platform;
-    system.win = p.indexOf("Win") == 0;
-    system.mac = p.indexOf("Mac") == 0;
-    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
-    //跳转语句  
-    if (system.win || system.mac || system.xll) {
+	<head>
+		<meta charset="UTF-8">
+		<title>云出玉</title>
+		<link rel="icon" href="./images/ycyslogo.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+			var system = {
+				win: false,
+				mac: false,
+				x11: false
+			};
+			//检测平台
+			var p = navigator.platform;
+			system.win = p.indexOf("Win") == 0;
+			system.mac = p.indexOf("Mac") == 0;
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			//跳转语句  
+			if (system.win || system.mac || system.xll) {
 
-    } else {
-        // window.location.href += '/mobile';
-    }
-    </script>
-</head>
+			} else {
+				// window.location.href += '/mobile';
+			}
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', 'thirdPage', 'fouthpage', 'fifthpage'],
+					menu: '#menu',
+					scrollingSpeed: 800,
+					easing: 'easeInOutCubic'
+				});
+			});
+		</script>
+	</head>
 
-<body>
-    <ul id="menu">
-        <li data-menuanchor="firstPage" class="item active">
-            <a class="anchor" href="#firstPage"></a>
-        </li>
-    </ul>
- <!--    <div class="header">
+	<body>
+		<ul id="menu">
+			<li data-menuanchor="firstPage" class="item active">
+				<a class="anchor" href="#firstPage"></a>
+			</li>
+		</ul>
+		<!--    <div class="header">
         <div class="border"></div>
         <div class="nav">
             <div class="logo"></div>
         </div>
     </div> -->
 
-    <div id="fullpage">
-        <div class="section news" data-anchor="firstPage">
-            <div class="container">
-                <div class="introduce fl">
-                    <div class="text">
-                        <div class="title c3d454f">云出玉</div>
-                        <div class="info c3d4650">专注传统和田玉</div>
-                    </div>
-                    <div class="download">
-                        <div class="button">
-                            <a href="http://itunes.apple.com/cn/app/id1112919065">
-                                <div class="btn ios black"></div>
-                            </a>
-                            <a href="http://android.myapp.com/myapp/detail.htm?apkName=icangyu.jade">
-                                <div class="btn android black"></div>
-                            </a>
-                        </div>
-                        <div class="code"><img src="./images/code.png"></div>
-                    </div>
-                </div>
-                <div class="showImg fr"><img class="pos-connect" src="./images/na1.png"></div>
-            </div>
-        </div>
+		<div id="fullpage">
 
-    </div>
-    <div class="footer">
-        <div class="wrap-main">
-            <p>
-                &copy; 云出玉. ALL RIGHTS RESERVED
-            </p>
-            <p>
-                服务热线：010-62730010 | 地址：江苏省苏州市相城区元和街道汇萃商业广场2幢118室二层西面 
-            </p>
-        </div>
-    </div>
-</body>
-<script type="text/javascript">
-    var height=window.innerHeight;
-    if(height<1000&&height>=850){
-        $(".container").css("height",600);
-        $(".pos-connect").css("height",512);
-    }else if(height<850&&height>=750){
-        $(".container").css("height",500);
-        $(".pos-connect").css("height",490);
-    }else if(height<750){
-        $(".container").css({"height":400,"width":920});
-        $(".pos-connect").css("height",400);
-    }
-</script>
+			<div class="section news" data-anchor="firstPage">
+				<div class="container">
+					<div class="introduce fl">
+						<div class="text">
+							<div class="title c3d454f">云出玉</div>
+							<div class="info c3d4650">专注传统和田玉</div>
+						</div>
+						<div class="download">
+							<div class="button">
+								<a href="http://itunes.apple.com/cn/app/id1112919065">
+									<div class="btn ios black"></div>
+								</a>
+								<a href="http://android.myapp.com/myapp/detail.htm?apkName=icangyu.jade">
+									<div class="btn android black"></div>
+								</a>
+							</div>
+							<div class="code"><img src="./images/code.png"></div>
+						</div>
+					</div>
+					<div class="showImg fr"><img class="pos-connect" src="./images/na1.png"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer">
+			<div class="wrap-main">
+				<p>
+					&copy; 云出玉. ALL RIGHTS RESERVED
+				</p>
+				<p>
+					服务热线：010-62730010 | 地址：江苏省苏州市相城区元和街道汇萃商业广场2幢118室二层西面
+				</p>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		var height = window.innerHeight;
+		if (height < 1000 && height >= 850) {
+			$(".container").css("height", 600);
+			$(".pos-connect").css("height", 512);
+		} else if (height < 850 && height >= 750) {
+			$(".container").css("height", 500);
+			$(".pos-connect").css("height", 490);
+		} else if (height < 750) {
+			$(".container").css({
+				"height": 400,
+				"width": 920
+			});
+			$(".pos-connect").css("height", 400);
+		}
+	</script>
 
 </html>
