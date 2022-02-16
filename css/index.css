@@ -1,0 +1,287 @@
+
+body {
+  font-family: 'Microsoft YaHei', arial, sans-serif;
+  margin:0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fl .pos-connect {
+  left: 0;
+}
+
+.fr .pos-connect {
+  right: 0;
+}
+
+
+/* 瀵艰埅鏍� */
+
+#menu .anchor {
+  display: inline-block;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+}
+
+#menu .item {
+  background: url('../images/anchor.jpg') no-repeat center center;
+  margin: 15px;
+}
+
+#menu .item.active,
+#menu .item:hover {
+  background: url('../images/anchor-active.jpg') no-repeat center center;
+}
+
+#menu {
+  position: fixed;
+  list-style: none;
+  top: 0;
+  bottom: 0;
+  right: 62px;
+  height: 170px;
+  margin: auto;
+  z-index: 70;
+  padding: 0;
+}
+
+
+/* 鍐呭椤甸潰 */
+
+.pcBack {
+  background: url('../images/pcBack.png');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.news {
+  background: url('../images/bg1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.forum {
+  background: url('../images/bg2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.products {
+  background: url('../images/bg3.png') no-repeat center center;
+  background-size: cover;
+}
+
+.bicyc {
+  background: url('../images/bg4.png') no-repeat center center;
+  background-size: cover;
+}
+
+.routes {
+  background: url('../images/bg5.png') no-repeat center center;
+  background-size: cover;
+}
+
+.container .showImg {
+  position: relative;
+  height: 100%;
+}
+
+.container .showImg img {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  width: 1010px;
+  height: 660px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.introduce .title {
+  font-size: 66px;
+  font-weight: bold;
+}
+
+.introduce .info {
+  font-size: 32px;
+  margin: 22px 0 57px 0;
+}
+
+.introduce .messagefont {
+  font-size: 24px;
+  margin: 22px 0 57px 0;
+}
+
+.introduce .download {
+  overflow: hidden;
+  width: 298px;
+  height: 110px;
+}
+
+.introduce .btn {
+  width: 158px;
+  height: 48px;
+}
+
+.introduce .row {
+  line-height: 25px;
+}
+
+.message {
+  line-height: 60px;
+}
+
+.introduce .android {
+  margin-top: 15px;
+}
+
+.introduce .ios.btn.white {
+  background: url('../images/ios-btn-white.png') no-repeat center center;
+}
+
+.introduce .ios.btn.black {
+  background: url('../images/ios-btn-black.png') no-repeat center center;
+}
+
+.introduce .android.btn.white {
+  background: url('../images/android-btn-white.png') no-repeat center center;
+}
+
+.introduce .android.btn.black {
+  background: url('../images/android-btn-black.png') no-repeat center center;
+}
+
+.introduce.fl .code {
+  float: right;
+}
+
+.introduce.fr .code {
+  float: left;
+}
+
+.introduce.fl .button,
+.introduce.fl .download {
+  float: left;
+}
+
+.introduce.fr .button,
+.introduce.fr .download {
+  float: right;
+}
+
+.introduce .code {
+  width: 110px;
+  height: 110px;
+  float: right;
+}
+
+
+/* header */
+
+.header {
+  height: 120px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .logo {
+  float: left;
+  background: url('../images/logo.png') no-repeat center center;
+  width: 88px;
+  height: 120px;
+}
+
+.header .border {
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+  background: #fff;
+  filter: alpha(opacity=20);
+  -moz-opacity: .2;
+  -khtml-opacity: .2;
+  opacity: .2;
+}
+
+.header .nav {
+  width: 1080px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  height: 120px;
+  line-height: 100px;
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.header .wrap {
+  float: right;
+  width: 152px;
+  overflow: hidden;
+}
+
+.header .about,
+.header .biketo {
+  float: left;
+}
+
+.header .about {
+  margin-left: 52px;
+}
+
+.header a,
+header a:hover {
+  color: #fff;
+}
+
+
+/* footer */
+
+.footer {
+  color: #fff;
+  width: 100%;
+  line-height: 19px;
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+
+/* css patterns */
+
+.cw {
+  color: #fff;
+}
+
+.cb {
+  color: #000;
+}
+
+.c3d454f {
+  color: #3d454f;
+}
+
+.c3d4650 {
+  color: #3d4650;
+}
+
+.c474747 {
+  color: #474747;
+}
