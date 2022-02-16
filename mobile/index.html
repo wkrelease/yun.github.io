@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>藏玉APP下载</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- Don't delete this. It's needed for development workflow. -->
+    <link rel="stylesheet" href="stylesheets/bundle.css">
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+
+</head>
+
+<body>
+
+    <div class="mobile">
+        <a class="mobileButton" href="http://a.app.qq.com/o/simple.jsp?pkgname=icangyu.jade"></a>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+
+   // function wxShare() {
+   //      var url = $location.absUrl().split('#')[0];
+   //          wxServices.postWxShare(url).then(function (res) {
+   //          if (res.data.code == 0) {
+   //              var respanse = res.data.data;
+   //              wx.config({
+   //                  debug: false,
+   //                  appId: respanse.appId,
+   //                  timestamp: respanse.timestamp, // 必填，生成签名的时间戳
+   //                  nonceStr: respanse.nonceStr, // 必填，生成签名的随机串
+   //                  signature: respanse.signature,// 必填，签名
+   //                  jsApiList: ['onMenuShareTimeline',
+   //                      'onMenuShareAppMessage',
+   //                      'onMenuShareQQ',
+   //                      'onMenuShareWeibo',
+   //                      'onMenuShareQZone']// 必填，需要使用的JS接口列表
+   //              });
+   //          }
+   //      })
+   //  }
+    
+</script>
+
+
+<script type="text/javascript">
+
+        wx.ready(function () {
+            wx.onMenuShareAppMessage({
+                title: '藏玉APP下载1',
+                desc: '藏玉-专注传统和田玉',
+                link: 'https://app.icangyu.com/jade',
+                imgUrl: 'https://app.icangyu.com/jade/images/logo.png',
+                success: function(){
+                },
+                cancel: function(){}
+            });
+            wx.onMenuShareTimeline({
+                title: '藏玉APP下载2',
+                desc: '藏玉-专注传统和田玉',
+                link: 'https://app.icangyu.com/jade',
+                imgUrl: 'https://app.icangyu.com/jade/images/logo.png',
+                success: function () {
+                },
+                cancel: function () {}
+            });
+        });
+
+</script>
+
+
+</html>
